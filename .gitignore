@@ -19,7 +19,6 @@ venv/
 *.egg-info/
 
 # Ignorar imagens temporárias ou de teste
-*.jpg
 *.png
 *.bmp
 *.gif
