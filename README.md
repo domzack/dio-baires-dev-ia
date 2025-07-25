@@ -4,37 +4,37 @@ Este diretório foi criado para disponibilizar as tarefas realizadas no bootcamp
 
 ## Arquivos do Projeto
 
-### 1. **`cats-vs-dogs.ipynb`**
+### **`01-cats-vs-dogs.ipynb`**
 Notebook que implementa um modelo de classificação de imagens para distinguir entre gatos e cachorros. Este projeto utiliza técnicas de pré-processamento de imagens e redes neurais convolucionais (CNNs) para treinar e avaliar o modelo.
 
-### 2. **`02_reducao_dimensionalidade.py`**
+### **`02_reducao_dimensionalidade.py`**
 Este script implementa funções para:
 - Converter imagens coloridas em níveis de cinza.
 - Converter imagens coloridas em preto e branco (binário).
 - Exibir as imagens processadas.
 - Criar uma imagem composta com a imagem original, a imagem em níveis de cinza e a imagem binária lado a lado.
 
-### 3. **`03-calculo-metricas.py`**
+### **`03-calculo-metricas.py`**
 Este script realiza a análise de desempenho de modelos de classificação para múltiplas classes. Ele inclui:
 - Geração de uma matriz de confusão para múltiplas classes.
 - Cálculo de métricas de desempenho (Sensibilidade, Especificidade, Precisão e F-Score) para cada classe.
 - Visualização das métricas em um gráfico de barras.
 - Plotagem da curva ROC para cada classe, com cálculo do AUC.
 
-### 4. **`04-treinamento-yolo.py`**
+### **`04-treinamento-yolo.py`**
 Este script realiza o download, extração, preparação dos dados e treinamento de um modelo YOLOv8 utilizando o dataset COCO. Ele inclui:
 - Download dos arquivos de imagens (`train2017.zip`) e anotações (`annotations_trainval2017.zip`) do dataset COCO, com exibição do tamanho dos arquivos antes do download.
 - Filtragem de imagens e anotações para classes específicas (`dog` e `person`).
 - Conversão das anotações para o formato YOLO (`class_id x_center y_center width height`).
 - Treinamento do modelo YOLOv8 com parâmetros como modelo base (`yolov8n.pt`), número de épocas (50) e tamanho da imagem (640x640).
 
-### 5. **`requirements.txt`**
+### **`requirements.txt`**
 Arquivo que lista as dependências do projeto, facilitando a instalação das bibliotecas necessárias. Para instalar, execute:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 6. **`.gitignore`**
+### **`.gitignore`**
 Arquivo de configuração para ignorar arquivos e diretórios desnecessários no controle de versão, como:
 - Cache do Python (`__pycache__`).
 - Arquivos temporários de IDEs (`.vscode/`, `.idea/`).
