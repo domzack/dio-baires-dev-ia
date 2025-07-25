@@ -1,6 +1,7 @@
-# Bootcamp DIO - Treinamento -> BairesDev - Machine Learning Training
+# Bootcamp DIO - BairesDev
+## Machine Learning Training
 
-Este diretório foi criado para disponibilizar as tarefas realizadas no bootcamp **DIO - Treinamento -> BairesDev - Machine Learning Training**, que tem como objetivo capacitar profissionais em técnicas de Machine Learning e Inteligência Artificial.
+Este diretório foi criado para disponibilizar as tarefas realizadas no bootcamp **DIO - BairesDev - Machine Learning Training**, que tem como objetivo capacitar profissionais em técnicas de Machine Learning e Inteligência Artificial.
 
 ## Arquivos do Projeto
 
