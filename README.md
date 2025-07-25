@@ -14,8 +14,12 @@ Este script implementa funções para:
 - Exibir as imagens processadas.
 - Criar uma imagem composta com a imagem original, a imagem em níveis de cinza e a imagem binária lado a lado.
 
-### 3. **`02-reducao-dimensionalidade.ipynb`**
-Notebook que contém as mesmas funções do script Python, permitindo executar as tarefas de redução dimensionalidade diretamente em um ambiente interativo.
+### 3. **`03-calculo-metricas.py`**
+Este script realiza a análise de desempenho de modelos de classificação para múltiplas classes. Ele inclui:
+- Geração de uma matriz de confusão para múltiplas classes.
+- Cálculo de métricas de desempenho (Sensibilidade, Especificidade, Precisão e F-Score) para cada classe.
+- Visualização das métricas em um gráfico de barras.
+- Plotagem da curva ROC para cada classe, com cálculo do AUC.
 
 ### 4. **`requirements.txt`**
 Arquivo que lista as dependências do projeto, facilitando a instalação das bibliotecas necessárias. Para instalar, execute:
@@ -52,6 +56,19 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
 4. **Criação de imagem composta**:
    - Gera uma imagem composta com a imagem original, a imagem em níveis de cinza e a imagem binária lado a lado.
 
+### Cálculo de Métricas
+1. **Matriz de Confusão**:
+   - Gera e exibe uma matriz de confusão para múltiplas classes.
+
+2. **Cálculo de Métricas**:
+   - Calcula métricas como Sensibilidade, Especificidade, Precisão e F-Score para cada classe.
+
+3. **Visualização de Métricas**:
+   - Exibe as métricas em um gráfico de barras para facilitar a comparação entre classes.
+
+4. **Curva ROC**:
+   - Plota a curva ROC para cada classe, calculando o AUC.
+
 ## Requisitos
 
 - Python 3.7 ou superior
@@ -64,27 +81,13 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
 
 1. Certifique-se de que as dependências estão instaladas conforme descrito acima.
 
-2. Para o projeto de redução dimensionalidade:
-   - Coloque a imagem que deseja processar no diretório do projeto e renomeie-a para `image.jpg`.
-   - Execute o script `02_reducao_dimensionalidade.py`:
+2. Para o projeto de cálculo de métricas:
+   - Execute o script `03-calculo-metricas.py`:
      ```bash
-     python 02_reducao_dimensionalidade.py
+     python 03-calculo-metricas.py
      ```
 
-3. Para o projeto Cats vs Dogs:
-   - Abra o notebook `cats-vs-dogs.ipynb` em um ambiente Jupyter ou VSCode com a extensão Jupyter.
-   - Execute as células para treinar e avaliar o modelo.
-
-## Exemplo de Saída
-
-### Cats vs Dogs
-- Resultados do modelo de classificação, incluindo métricas de precisão e imagens classificadas.
-
-### Redução Dimensionalidade
-- A imagem original.
-- A imagem convertida para níveis de cinza.
-- A imagem convertida para preto e branco.
-- Uma imagem composta exibindo as três transformações lado a lado.
+3. Para os outros projetos, siga as instruções específicas de cada arquivo.
 
 ## Licença
 
