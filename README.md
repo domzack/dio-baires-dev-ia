@@ -29,6 +29,13 @@ Este script realiza o download, extração, preparação dos dados e treinamento
 - Conversão das anotações para o formato YOLO (`class_id x_center y_center width height`).
 - Treinamento do modelo YOLOv8 com parâmetros como modelo base (`yolov8n.pt`), número de épocas (50) e tamanho da imagem (640x640).
 
+### **`04-teste-yolo.py`**
+Este script utiliza o modelo YOLOv8 para realizar detecção de objetos em imagens. Ele inclui:
+- Busca automática por todas as imagens no diretório atual com extensões válidas (`.jpg`, `.jpeg`, `.png`).
+- Realiza a detecção de objetos em cada imagem utilizando o modelo YOLOv8 pré-treinado.
+- Exibe as imagens com as detecções rotuladas.
+- Imprime no terminal as classes detectadas e suas respectivas confiabilidades.
+
 ### **`requirements.txt`**
 Arquivo que lista as dependências do projeto, facilitando a instalação das bibliotecas necessárias. Para instalar, execute:
 ```bash
@@ -94,6 +101,13 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
      - Número de épocas: 50.
      - Tamanho da imagem: 640x640.
 
+### Teste YOLO
+1. **Detecção de objetos**:
+   - Busca automaticamente todas as imagens no diretório atual.
+   - Realiza a detecção de objetos em cada imagem utilizando o modelo YOLOv8.
+   - Exibe as imagens com as detecções rotuladas.
+   - Imprime no terminal as classes detectadas e suas confiabilidades.
+
 ## Requisitos
 
 - Python 3.7 ou superior
@@ -118,7 +132,13 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
      python 04-treinamento-yolo.py
      ```
 
-4. Para os outros projetos, siga as instruções específicas de cada arquivo.
+4. Para o teste YOLO:
+   - Execute o script `04-teste-yolo.py`:
+     ```bash
+     python 04-teste-yolo.py
+     ```
+
+5. Para os outros projetos, siga as instruções específicas de cada arquivo.
 
 ## Licença
 
