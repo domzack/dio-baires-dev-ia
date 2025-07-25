@@ -1,0 +1,5 @@
+train: ./yolo_dataset/images
+val: ./yolo_dataset/images
+
+nc: 2
+names: ['dog', 'person']
