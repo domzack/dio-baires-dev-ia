@@ -29,3 +29,5 @@ venv/
 # Ignorar arquivos de IDEs
 .vscode/
 .idea/
+
+yolov8n.pt
