@@ -4,23 +4,26 @@ Este diretório foi criado para disponibilizar as tarefas realizadas no bootcamp
 
 ## Arquivos do Projeto
 
-### 1. **`02_reducao_dimensionalidade.py`**
+### 1. **`cats-vs-dogs.ipynb`**
+Notebook que implementa um modelo de classificação de imagens para distinguir entre gatos e cachorros. Este projeto utiliza técnicas de pré-processamento de imagens e redes neurais convolucionais (CNNs) para treinar e avaliar o modelo.
+
+### 2. **`02_reducao_dimensionalidade.py`**
 Este script implementa funções para:
 - Converter imagens coloridas em níveis de cinza.
 - Converter imagens coloridas em preto e branco (binário).
 - Exibir as imagens processadas.
 - Criar uma imagem composta com a imagem original, a imagem em níveis de cinza e a imagem binária lado a lado.
 
-### 2. **`02-reducao-dimensionalidade.ipynb`**
+### 3. **`02-reducao-dimensionalidade.ipynb`**
 Notebook que contém as mesmas funções do script Python, permitindo executar as tarefas de redução dimensionalidade diretamente em um ambiente interativo.
 
-### 3. **`requirements.txt`**
+### 4. **`requirements.txt`**
 Arquivo que lista as dependências do projeto, facilitando a instalação das bibliotecas necessárias. Para instalar, execute:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 4. **`.gitignore`**
+### 5. **`.gitignore`**
 Arquivo de configuração para ignorar arquivos e diretórios desnecessários no controle de versão, como:
 - Cache do Python (`__pycache__`).
 - Arquivos temporários de IDEs (`.vscode/`, `.idea/`).
@@ -28,6 +31,15 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
 
 ## Funcionalidades do Projeto
 
+### Cats vs Dogs
+1. **Classificação de imagens**:
+   - Treina um modelo para distinguir entre imagens de gatos e cachorros.
+   - Utiliza redes neurais convolucionais (CNNs) para o aprendizado.
+
+2. **Pré-processamento de imagens**:
+   - Realiza ajustes nas imagens para melhorar o desempenho do modelo.
+
+### Redução Dimensionalidade
 1. **Conversão para níveis de cinza**:
    - Converte uma imagem colorida para tons de cinza utilizando a média dos valores RGB.
 
@@ -52,21 +64,23 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
 
 1. Certifique-se de que as dependências estão instaladas conforme descrito acima.
 
-2. Coloque a imagem que deseja processar no diretório do projeto e renomeie-a para `image.jpg`.
+2. Para o projeto de redução dimensionalidade:
+   - Coloque a imagem que deseja processar no diretório do projeto e renomeie-a para `image.jpg`.
+   - Execute o script `02_reducao_dimensionalidade.py`:
+     ```bash
+     python 02_reducao_dimensionalidade.py
+     ```
 
-3. Execute o script `02_reducao_dimensionalidade.py`:
-   ```bash
-   python 02_reducao_dimensionalidade.py
-   ```
-
-4. O script exibirá:
-   - A imagem em níveis de cinza.
-   - A imagem em preto e branco.
-   - A imagem composta com as três transformações.
+3. Para o projeto Cats vs Dogs:
+   - Abra o notebook `cats-vs-dogs.ipynb` em um ambiente Jupyter ou VSCode com a extensão Jupyter.
+   - Execute as células para treinar e avaliar o modelo.
 
 ## Exemplo de Saída
 
-Após executar o script, você verá:
+### Cats vs Dogs
+- Resultados do modelo de classificação, incluindo métricas de precisão e imagens classificadas.
+
+### Redução Dimensionalidade
 - A imagem original.
 - A imagem convertida para níveis de cinza.
 - A imagem convertida para preto e branco.
