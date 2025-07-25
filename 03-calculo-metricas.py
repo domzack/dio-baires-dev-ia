@@ -3,10 +3,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 from sklearn.metrics import confusion_matrix, accuracy_score, precision_score, recall_score, f1_score, roc_curve, auc
 
-# Simulação de dados (previsões e verdadeiros) para múltiplas classes
-# Classes: 0, 1, 2
-y_true = np.random.choice([0, 1, 2], size=1000, p=[0.3, 0.5, 0.2])  # Valores verdadeiros (10x mais dados)
-y_pred = np.random.choice([0, 1, 2], size=1000, p=[0.3, 0.5, 0.2])  # Previsões do modelo (10x mais dados)
+y_true = np.random.choice([0, 1, 2], size=1000, p=[0.3, 0.5, 0.2])  # Valores verdadeiros
+y_pred = np.random.choice([0, 1, 2], size=1000, p=[0.3, 0.5, 0.2])  # Previsões do modelo
 
 # Gerar matriz de confusão
 cm = confusion_matrix(y_true, y_pred)
