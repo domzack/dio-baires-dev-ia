@@ -1,0 +1,32 @@
+# Ignorar arquivos temporários do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Ignorar arquivos de cache do Python
+__pycache__/
+*.pyc
+*.pyo
+
+# Ignorar arquivos de log
+*.log
+
+# Ignorar arquivos de configuração do ambiente virtual
+.env
+*.env
+
+# Ignorar dependências instaladas localmente
+venv/
+*.egg-info/
+
+# Ignorar imagens temporárias ou de teste
+*.jpg
+*.png
+*.bmp
+*.gif
+
+# Ignorar arquivos de notebooks gerados automaticamente
+.ipynb_checkpoints/
+
+# Ignorar arquivos de IDEs
+.vscode/
+.idea/
