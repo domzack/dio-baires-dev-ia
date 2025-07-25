@@ -21,13 +21,20 @@ Este script realiza a análise de desempenho de modelos de classificação para 
 - Visualização das métricas em um gráfico de barras.
 - Plotagem da curva ROC para cada classe, com cálculo do AUC.
 
-### 4. **`requirements.txt`**
+### 4. **`04-treinamento-yolo.py`**
+Este script realiza o download, extração, preparação dos dados e treinamento de um modelo YOLOv8 utilizando o dataset COCO. Ele inclui:
+- Download dos arquivos de imagens (`train2017.zip`) e anotações (`annotations_trainval2017.zip`) do dataset COCO, com exibição do tamanho dos arquivos antes do download.
+- Filtragem de imagens e anotações para classes específicas (`dog` e `person`).
+- Conversão das anotações para o formato YOLO (`class_id x_center y_center width height`).
+- Treinamento do modelo YOLOv8 com parâmetros como modelo base (`yolov8n.pt`), número de épocas (50) e tamanho da imagem (640x640).
+
+### 5. **`requirements.txt`**
 Arquivo que lista as dependências do projeto, facilitando a instalação das bibliotecas necessárias. Para instalar, execute:
 ```bash
 pip install -r requirements.txt
 ```
 
-### 5. **`.gitignore`**
+### 6. **`.gitignore`**
 Arquivo de configuração para ignorar arquivos e diretórios desnecessários no controle de versão, como:
 - Cache do Python (`__pycache__`).
 - Arquivos temporários de IDEs (`.vscode/`, `.idea/`).
@@ -69,6 +76,23 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
 4. **Curva ROC**:
    - Plota a curva ROC para cada classe, calculando o AUC.
 
+### Treinamento YOLO
+1. **Download e extração de dados COCO**:
+   - Baixa os arquivos de imagens e anotações do dataset COCO.
+   - Exibe o tamanho dos arquivos antes de baixá-los.
+   - Extrai os arquivos para a pasta `coco_data`.
+
+2. **Preparação do dataset YOLO**:
+   - Filtra imagens e anotações para classes específicas (`dog` e `person`).
+   - Converte as anotações para o formato YOLO (`class_id x_center y_center width height`).
+   - Salva as imagens e anotações em `yolo_dataset/images` e `yolo_dataset/labels`.
+
+3. **Treinamento YOLO**:
+   - Inicia o treinamento do modelo YOLOv8 com os seguintes parâmetros:
+     - Modelo base: `yolov8n.pt`.
+     - Número de épocas: 50.
+     - Tamanho da imagem: 640x640.
+
 ## Requisitos
 
 - Python 3.7 ou superior
@@ -87,7 +111,13 @@ Arquivo de configuração para ignorar arquivos e diretórios desnecessários no
      python 03-calculo-metricas.py
      ```
 
-3. Para os outros projetos, siga as instruções específicas de cada arquivo.
+3. Para o treinamento YOLO:
+   - Execute o script `04-treinamento-yolo.py`:
+     ```bash
+     python 04-treinamento-yolo.py
+     ```
+
+4. Para os outros projetos, siga as instruções específicas de cada arquivo.
 
 ## Licença
 
