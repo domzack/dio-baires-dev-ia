@@ -1,8 +1,32 @@
-# Redução Dimensionalidade de Imagens
+# Bootcamp DIO - Treinamento -> BairesDev - Machine Learning Training
 
-Este projeto faz parte das tarefas realizadas no bootcamp da **DIO - Treinamento -> BairesDev - Machine Learning Training**. Ele implementa funções para converter imagens coloridas em níveis de cinza e em imagens binárias (preto e branco), além de exibir os resultados e criar uma imagem composta com as transformações.
+Este diretório foi criado para disponibilizar as tarefas realizadas no bootcamp **DIO - Treinamento -> BairesDev - Machine Learning Training**, que tem como objetivo capacitar profissionais em técnicas de Machine Learning e Inteligência Artificial.
 
-## Funcionalidades
+## Arquivos do Projeto
+
+### 1. **`02_reducao_dimensionalidade.py`**
+Este script implementa funções para:
+- Converter imagens coloridas em níveis de cinza.
+- Converter imagens coloridas em preto e branco (binário).
+- Exibir as imagens processadas.
+- Criar uma imagem composta com a imagem original, a imagem em níveis de cinza e a imagem binária lado a lado.
+
+### 2. **`02-reducao-dimensionalidade.ipynb`**
+Notebook que contém as mesmas funções do script Python, permitindo executar as tarefas de redução dimensionalidade diretamente em um ambiente interativo.
+
+### 3. **`requirements.txt`**
+Arquivo que lista as dependências do projeto, facilitando a instalação das bibliotecas necessárias. Para instalar, execute:
+```bash
+pip install -r requirements.txt
+```
+
+### 4. **`.gitignore`**
+Arquivo de configuração para ignorar arquivos e diretórios desnecessários no controle de versão, como:
+- Cache do Python (`__pycache__`).
+- Arquivos temporários de IDEs (`.vscode/`, `.idea/`).
+- Imagens temporárias (`*.jpg`, `*.png`).
+
+## Funcionalidades do Projeto
 
 1. **Conversão para níveis de cinza**:
    - Converte uma imagem colorida para tons de cinza utilizando a média dos valores RGB.
@@ -40,12 +64,6 @@ Este projeto faz parte das tarefas realizadas no bootcamp da **DIO - Treinamento
    - A imagem em preto e branco.
    - A imagem composta com as três transformações.
 
-## Estrutura do Projeto
-
-- **`02_reducao_dimensionalidade.py`**: Script principal que contém as funções de processamento e exibição de imagens.
-- **`image.jpg`**: Imagem de entrada para processamento (deve ser colocada no diretório do projeto).
-- **`requirements.txt`**: Arquivo contendo as dependências do projeto.
-
 ## Exemplo de Saída
 
 Após executar o script, você verá:
@@ -53,10 +71,6 @@ Após executar o script, você verá:
 - A imagem convertida para níveis de cinza.
 - A imagem convertida para preto e branco.
 - Uma imagem composta exibindo as três transformações lado a lado.
-
-## Sobre o Bootcamp
-
-Este diretório foi criado para disponibilizar as tarefas realizadas no bootcamp **DIO - Treinamento -> BairesDev - Machine Learning Training**, que tem como objetivo capacitar profissionais em técnicas de Machine Learning e Inteligência Artificial.
 
 ## Licença
 
